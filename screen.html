@@ -1,0 +1,670 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta content="web_standard" name="shell-type">
+<title>Adeline — Strategy &amp; Communication</title>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&amp;family=EB+Garamond:ital,wght@0,400;0,500;1,400&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<style>
+    @layer base {
+      html, body { margin: 0; padding: 0; }
+      body { overscroll-behavior: none; }
+    }
+    ::-webkit-scrollbar { display: none; }
+  </style>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><style type="text/css"></style>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "tertiary-container": "#32170f",
+            "primary-fixed-dim": "#cac6c4",
+            "on-surface-variant": "#4a4640",
+            "on-tertiary-fixed": "#2e140c",
+            "secondary-fixed-dim": "#ffb4a2",
+            "on-primary-fixed-variant": "#484645",
+            "tertiary": "#110200",
+            "on-secondary-container": "#773221",
+            "background": "#fcf9f3",
+            "on-primary-container": "#888584",
+            "secondary-container": "#fd9d85",
+            "on-error-container": "#93000a",
+            "on-secondary": "#ffffff",
+            "surface-container-lowest": "#ffffff",
+            "on-primary-fixed": "#1c1b1a",
+            "on-surface": "#1c1c18",
+            "surface": "#fcf9f3",
+            "on-tertiary-container": "#a77c70",
+            "primary-container": "#1f1e1d",
+            "tertiary-fixed-dim": "#ecbcad",
+            "on-error": "#ffffff",
+            "secondary-fixed": "#ffdad2",
+            "surface-variant": "#e5e2dc",
+            "error-container": "#ffdad6",
+            "surface-container": "#f0eee8",
+            "secondary": "#944836",
+            "on-secondary-fixed-variant": "#763221",
+            "on-tertiary-fixed-variant": "#603e34",
+            "on-tertiary": "#ffffff",
+            "error": "#ba1a1a",
+            "outline": "#7b766f",
+            "inverse-on-surface": "#f3f0ea",
+            "surface-bright": "#fcf9f3",
+            "tertiary-fixed": "#ffdbd0",
+            "outline-variant": "#ccc6bd",
+            "primary": "#050504",
+            "surface-dim": "#dcdad4",
+            "primary-fixed": "#e6e2df",
+            "on-background": "#1c1c18",
+            "inverse-primary": "#cac6c4",
+            "surface-container-low": "#f6f3ed",
+            "on-secondary-fixed": "#3c0700",
+            "surface-tint": "#605e5c",
+            "inverse-surface": "#31312d",
+            "surface-container-highest": "#e5e2dc",
+            "on-primary": "#ffffff",
+            "surface-container-high": "#ebe8e2",
+            "atelier-dark": "#191817",
+            "atelier-clay": "#e8d7ce"
+          },
+          fontFamily: {
+            "headline": ["EB Garamond", "serif"],
+            "display": ["EB Garamond", "serif"],
+            "body": ["DM Sans", "sans-serif"]
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-surface font-body text-on-surface antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- HEADER -->
+<header class="fixed top-0 inset-x-0 z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant/30">
+<div class="h-20 max-w-[1400px] mx-auto px-6 sm:px-10 lg:px-16 flex items-center justify-between">
+<a class="flex items-center gap-3 group" href="#">
+<img alt="Adeline Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VJHQFPBWVpvNpIhlMNYICB0UreV5kiMgKspNPJfvxiWY5rv_6fYpkcRMH3VPewbI8k98r3ykqFLf9baZUi9IgomCvrLoZiWHfIFW4P3qQQ9vxhA71yYX7fZzu-pefwjNyJzAKuJ4zir_axQjRWrikFrMeFB-qP77ftX8XI1aVlevqj_OIMOgXZvtjeojzqB7KrISS-9xw5AFzgsTC1gM8MVqtD6MNtl3NQNfpxdbu3n-MpN1issdzJN-ac">
+<span class="hidden sm:inline-block font-body text-xs uppercase tracking-widest text-on-surface-variant font-medium border-l border-outline-variant/60 pl-3">
+          Atelier Strategy
+        </span>
+</a>
+<nav class="hidden lg:flex items-center gap-8 text-sm font-medium tracking-wide text-on-surface-variant">
+<a class="hover:text-primary transition-colors py-1" href="#about">About</a>
+<a class="hover:text-primary transition-colors py-1" href="#expertise">Expertise</a>
+<a class="hover:text-primary transition-colors py-1" href="#projects">Selected Work</a>
+<a class="hover:text-primary transition-colors py-1" href="#experience">Experience</a>
+<a class="hover:text-primary transition-colors py-1" href="#impact">Impact</a>
+<a class="hover:text-primary transition-colors py-1" href="#contact">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<a class="inline-flex items-center gap-2 px-5 py-2.5 bg-primary text-on-primary rounded-full text-xs font-semibold uppercase tracking-wider hover:bg-secondary transition-all duration-300 shadow-sm hover:-translate-y-0.5" href="#contact">
+<span class="">Start Mandate</span>
+<span class="material-symbols-outlined text-sm">arrow_outward</span>
+</a>
+</div>
+</div>
+</header>
+<main class="w-full pt-20">
+<!-- HERO SECTION: The Architectural Atelier -->
+<section class="relative w-full max-w-[1400px] mx-auto px-6 sm:px-10 lg:px-16 py-24 lg:py-32 overflow-hidden">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+<!-- Left: Confident Editorial Typography -->
+<div class="lg:col-span-7 flex flex-col justify-center space-y-8">
+<div class="inline-flex items-center gap-2.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-body text-xs uppercase tracking-[0.2em] font-semibold text-secondary">
+              Strategic Advisory &amp; Brand Architecture
+            </span>
+</div>
+<h1 class="font-headline text-4xl sm:text-5xl lg:text-[4.25rem] leading-[1.08] text-primary font-normal tracking-tight max-w-2xl">
+            Connecting vision, narrative, and <span class="italic font-normal text-secondary font-headline">transformative</span> commercial growth.
+          </h1>
+<p class="font-body text-lg text-on-surface-variant max-w-xl leading-relaxed">
+            Bridging refined cultural storytelling with rigorous commercial execution. Partnering with visionary founders and institutional leaders to transform ambiguity into commanding market presence.
+          </p>
+<div class="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+<a class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-on-primary rounded-full text-xs font-semibold uppercase tracking-widest hover:bg-secondary transition-all duration-300 shadow-md hover:-translate-y-0.5" href="#projects">
+<span class="">View Case Studies</span>
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+<a class="inline-flex items-center justify-center gap-2 px-7 py-4 bg-surface-container border border-outline-variant/50 text-on-surface rounded-full text-xs font-semibold uppercase tracking-widest hover:bg-surface-container-high transition-all duration-300" href="#contact">
+<span class="">Request Advisory Dossier</span>
+</a>
+</div>
+<div class="flex items-center gap-3 text-on-surface-variant text-xs tracking-wide pt-2">
+<span class="inline-block w-1.5 h-1.5 rounded-full bg-emerald-600"></span>
+<span class="">Now reviewing Q3/Q4 strategic partnerships &amp; board advisory</span>
+</div>
+</div>
+<!-- Right: Elegant Architectural Silhouette Portrait -->
+<div class="lg:col-span-5 relative flex justify-center lg:justify-end">
+<div class="relative w-full max-w-md">
+<!-- Architectural background backdrop frame -->
+<div class="absolute -top-4 -left-4 w-full h-full rounded-[2.5rem] bg-surface-container-high/80 -z-10 transform -rotate-1 border border-outline-variant/30"></div>
+<div class="relative rounded-[2.25rem] overflow-hidden shadow-2xl bg-surface-container-low border border-outline-variant/40 aspect-[4/5]">
+<img alt="Adeline — Strategic Advisor" class="w-full h-full object-cover object-center transition-transform duration-700 ease-out hover:scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1XxZz9BsK7jnJc0vwDOWDIvrG7vQMHDh48MtJBiEf6JvOb-o0XK7ayTogx4koLJ-rNZ_TVpC_j8k_Oy6JUdBmqAQs1g2WseX-sZggLSu3o3cqg7M7we9T7E6kKXyGr9ycPw4xWKEN6ZV8NmY9oviAHqKnkN5CNQIpMJBh8V8sX7rJhIh-cKEDnSc_O9-0vWTYY4HjolDOhk7lJwTYz_291lNnHNg7RA-gzGEqTXLA-RqyyrWn0TvhYbDPW2">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6 flex items-center justify-between text-on-primary">
+<div>
+<p class="font-headline text-2xl text-surface font-normal">Adeline</p>
+<p class="font-body text-xs uppercase tracking-widest text-secondary-fixed">Principal &amp; Strategic Architect</p>
+</div>
+<div class="px-3 py-1 rounded-full bg-surface/20 backdrop-blur-md text-xs font-medium border border-white/20">
+                  New York
+                </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- EDITORIAL PERSPECTIVE / ABOUT SECTION -->
+<section class="w-full bg-surface-container-low py-28 lg:py-36 border-y border-outline-variant/20" id="about">
+<div class="max-w-[1400px] mx-auto px-6 sm:px-10 lg:px-16">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+<div class="lg:col-span-4">
+<span class="font-body text-xs uppercase tracking-[0.2em] font-semibold text-secondary block mb-3">Atelier Philosophy</span>
+<h2 class="font-headline text-3xl sm:text-4xl text-primary leading-tight font-normal">
+              “Strategy without soul is forgotten; creativity without discipline is wasted.”
+            </h2>
+</div>
+<div class="lg:col-span-8 space-y-12">
+<div class="font-body text-lg text-on-surface-variant space-y-6 leading-relaxed">
+<p class="">
+                Over the past eight years, my practice has navigated the intersection of high-tier venture acceleration, cultural storytelling, and commercial distribution. From crafting unified narratives for deep-tech venture houses to re-architecting legacy consumer icons, I help leaders transform complex propositions into magnetic market positioning.
+              </p>
+<p class="">
+                Real momentum emerges when product excellence, human psychology, and cultural cadence align with surgical simplicity.
+              </p>
+</div>
+<!-- Three Principles -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 pt-6 border-t border-outline-variant/40">
+<div>
+<span class="font-headline text-2xl text-secondary font-normal block mb-2">01 / Narrative</span>
+<h3 class="font-body text-base font-semibold text-primary mb-1">Purpose-Led Architecture</h3>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">Anchoring corporate objectives in cultural relevance that cannot be duplicated.</p>
+</div>
+<div>
+<span class="font-headline text-2xl text-secondary font-normal block mb-2">02 / Rigor</span>
+<h3 class="font-body text-base font-semibold text-primary mb-1">Cross-Discipline Systems</h3>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">Pairing qualitative editorial craft with precise lifecycle intelligence.</p>
+</div>
+<div>
+<span class="font-headline text-2xl text-secondary font-normal block mb-2">03 / Velocity</span>
+<h3 class="font-body text-base font-semibold text-primary mb-1">Mobilized Execution</h3>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">Deploying focused strategic pods to move mandates from blueprint to market reality.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- AREAS OF EXPERTISE: HIGH-CONTRAST DEEP CHARCOAL ATELIER -->
+<section class="w-full bg-secondary text-surface py-28 lg:py-36 relative overflow-hidden" id="expertise">
+<div class="max-w-[1400px] mx-auto px-6 sm:px-10 lg:px-16 relative z-10">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+<div>
+<span class="font-body text-xs uppercase tracking-[0.2em] font-semibold text-secondary-fixed">Capabilities</span>
+<h2 class="font-headline text-3xl sm:text-5xl text-on-secondary font-normal mt-2 tracking-tight">Areas of Expertise</h2>
+</div>
+<p class="font-body text-base text-secondary-fixed max-w-md leading-relaxed">
+            High-stakes interventions designed to address critical inflections across positioning, narrative capitalization, and scale.
+          </p>
+</div>
+<!-- Bento Grid with Rich Warm Styling -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Card 1: Span 2 -->
+<div class="lg:col-span-2 p-8 md:p-10 rounded-3xl bg-white/10 backdrop-blur-sm border border-white/20 hover:border-white/40 transition-all duration-300 flex flex-col justify-between group shadow-sm hover:shadow-md">
+<div>
+<div class="flex items-center justify-between mb-6">
+<span class="font-headline text-4xl text-secondary-fixed font-light">01</span>
+<span class="text-xs font-semibold uppercase tracking-widest text-on-secondary px-3 py-1 rounded-full bg-white/10 border border-white/20">Core Advisory</span>
+</div>
+<h3 class="font-headline text-2xl sm:text-3xl text-on-secondary mb-3 font-normal">Strategic Communication &amp; Executive Positioning</h3>
+<p class="font-body text-base text-surface-container leading-relaxed max-w-2xl">
+                Architecting narrative authority for founders and executives navigating transformative capital events, market pivots, or global expansions. Formulating stakeholder alignment, press posture, and crisis resilience.
+              </p>
+</div>
+<div class="mt-8 pt-6 border-t border-white/20 flex flex-wrap gap-2 text-xs font-medium text-surface-container">
+<span class="px-3 py-1 rounded-full bg-white/10">Executive Thought Leadership</span>
+<span class="px-3 py-1 rounded-full bg-white/10">PR Architecture</span>
+<span class="px-3 py-1 rounded-full bg-white/10">Crisis Playbooks</span>
+<span class="px-3 py-1 rounded-full bg-white/10">Investor Storytelling</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="p-8 md:p-10 rounded-3xl bg-white/10 backdrop-blur-sm border border-white/20 hover:border-white/40 transition-all duration-300 flex flex-col justify-between group shadow-sm hover:shadow-md">
+<div>
+<div class="flex items-center justify-between mb-6">
+<span class="font-headline text-4xl text-secondary-fixed font-light">02</span>
+<span class="text-xs font-semibold uppercase tracking-widest text-on-secondary px-3 py-1 rounded-full bg-white/10 border border-white/20">Architecture</span>
+</div>
+<h3 class="font-headline text-2xl text-on-secondary mb-3 font-normal">Brand Development &amp; Identity</h3>
+<p class="font-body text-sm text-surface-container leading-relaxed">
+                Establishing unmistakable voice, refined verbal architecture, and distinctive aesthetic guidelines that translate complexity into enduring market equity.
+              </p>
+</div>
+<div class="mt-8 pt-6 border-t border-white/20 flex flex-wrap gap-2 text-xs font-medium text-surface-container">
+<span class="px-3 py-1 rounded-full bg-white/10">Verbal Identity</span>
+<span class="px-3 py-1 rounded-full bg-white/10">Brand Codes</span>
+<span class="px-3 py-1 rounded-full bg-white/10">Market Positioning</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="p-8 md:p-10 rounded-3xl bg-white/10 backdrop-blur-sm border border-white/20 hover:border-white/40 transition-all duration-300 flex flex-col justify-between group shadow-sm hover:shadow-md">
+<div>
+<div class="flex items-center justify-between mb-6">
+<span class="font-headline text-4xl text-secondary-fixed font-light">03</span>
+<span class="text-xs font-semibold uppercase tracking-widest text-on-secondary px-3 py-1 rounded-full bg-white/10 border border-white/20">Acquisition</span>
+</div>
+<h3 class="font-headline text-2xl text-on-secondary mb-3 font-normal">Digital Growth Systems</h3>
+<p class="font-body text-sm text-surface-container leading-relaxed">
+                Engineering sustainable retention engines and full-funnel activation models that lower acquisition friction while reinforcing premium brand perception.
+              </p>
+</div>
+<div class="mt-8 pt-6 border-t border-white/20 flex flex-wrap gap-2 text-xs font-medium text-surface-container">
+<span class="px-3 py-1 rounded-full bg-white/10">Omnichannel Strategy</span>
+<span class="px-3 py-1 rounded-full bg-white/10">Retention Engines</span>
+<span class="px-3 py-1 rounded-full bg-white/10">LTV Modeling</span>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="p-8 md:p-10 rounded-3xl bg-white/10 backdrop-blur-sm border border-white/20 hover:border-white/40 transition-all duration-300 flex flex-col justify-between group shadow-sm hover:shadow-md">
+<div>
+<div class="flex items-center justify-between mb-6">
+<span class="font-headline text-4xl text-secondary-fixed font-light">04</span>
+<span class="text-xs font-semibold uppercase tracking-widest text-on-secondary px-3 py-1 rounded-full bg-white/10 border border-white/20">Editorial</span>
+</div>
+<h3 class="font-headline text-2xl text-on-secondary mb-3 font-normal">Content &amp; Publication Direction</h3>
+<p class="font-body text-sm text-surface-container leading-relaxed">
+                Directing intellectual property, bespoke whitepapers, quarterly market intelligence, and executive publications that cement category authority.
+              </p>
+</div>
+<div class="mt-8 pt-6 border-t border-white/20 flex flex-wrap gap-2 text-xs font-medium text-surface-container">
+<span class="px-3 py-1 rounded-full bg-white/10">Industry Papers</span>
+<span class="px-3 py-1 rounded-full bg-white/10">Editorial Direction</span>
+<span class="px-3 py-1 rounded-full bg-white/10">Ghostwriting</span>
+</div>
+</div>
+<!-- Card 5 (Span 2) -->
+<div class="lg:col-span-2 p-8 md:p-10 rounded-3xl bg-white/10 backdrop-blur-sm border border-white/20 hover:border-white/40 transition-all duration-300 flex flex-col justify-between group shadow-sm hover:shadow-md">
+<div>
+<div class="flex items-center justify-between mb-6">
+<span class="font-headline text-4xl text-secondary-fixed font-light">05</span>
+<span class="text-xs font-semibold uppercase tracking-widest text-on-secondary px-3 py-1 rounded-full bg-white/10 border border-white/20">Ecosystem</span>
+</div>
+<h3 class="font-headline text-2xl sm:text-3xl text-on-secondary mb-3 font-normal">Intimate Salons &amp; Community Councils</h3>
+<p class="font-body text-base text-surface-container leading-relaxed max-w-2xl">
+                Convening high-trust networks around emerging market spaces. Designing private founder dinners, curated investor roundtables, and strategic advisory councils that drive organic referral loops.
+              </p>
+</div>
+<div class="mt-8 pt-6 border-t border-white/20 flex flex-wrap gap-2 text-xs font-medium text-surface-container">
+<span class="px-3 py-1 rounded-full bg-white/10">Founder Dinners</span>
+<span class="px-3 py-1 rounded-full bg-white/10">Executive Salons</span>
+<span class="px-3 py-1 rounded-full bg-white/10">Advisory Councils</span>
+<span class="px-3 py-1 rounded-full bg-white/10">Summits</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SELECTED PROJECTS / EDITORIAL CASE STUDIES -->
+<section class="w-full bg-surface py-28 lg:py-36" id="projects">
+<div class="max-w-[1400px] mx-auto px-6 sm:px-10 lg:px-16">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-6">
+<div>
+<span class="font-body text-xs uppercase tracking-[0.2em] font-semibold text-secondary">Selected Case Studies</span>
+<h2 class="font-headline text-3xl sm:text-5xl text-primary font-normal mt-2 tracking-tight">Proof of Narrative Impact</h2>
+</div>
+<p class="font-body text-base text-on-surface-variant max-w-md leading-relaxed">
+            Side-by-side strategic breakdowns highlighting narrative realignment, execution frameworks, and measurable commercial shifts.
+          </p>
+</div>
+<div class="space-y-24">
+<!-- Case Study 01: Aura Studio -->
+<article class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center pb-20 border-b border-outline-variant/30">
+<!-- Visual Imagery Column -->
+<div class="lg:col-span-7 overflow-hidden rounded-3xl bg-surface-container-low shadow-lg group">
+<img alt="Aura Studio Brand Identity Case Study" class="w-full aspect-[16/10] object-cover transition-transform duration-700 ease-out group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnqGTsd8bOy5XSbmxWv2H8fU8R3xQcv3ZcIwZVeCywa0MvRah4qkVjZu4hqQmRgD-j_5wndkCNgqJ6hxqjtQ_rPg8t8Vy8cTjC4nZPYbXYlz_2cOzrYmJ667On5Q8Z68oHXuB7v8v8Du2g0Vaz8a-6njv1M2VjnLYBMMvLjDITkPrqFht7EBCwzptXazyQQ7I794r8301CQUHuh8B5mVvGB1bQ1tLLd_2OhqJmYzpf3FkUHRYyy0wt4w">
+</div>
+<!-- Editorial Breakdown Column -->
+<div class="lg:col-span-5 flex flex-col justify-between space-y-6">
+<div>
+<div class="flex items-center gap-2 mb-2">
+<span class="font-body text-xs uppercase tracking-widest text-secondary font-semibold">Case Study 01</span>
+<span class="text-outline-variant">•</span>
+<span class="font-body text-xs text-on-surface-variant">Global Rebrand &amp; Repositioning</span>
+</div>
+<h3 class="font-headline text-3xl sm:text-4xl text-primary font-normal">Aura Studio</h3>
+<p class="font-body text-base text-on-surface-variant mt-4 leading-relaxed">
+                  A legacy luxury lifestyle house losing cultural traction with modern digital cohorts. We restructured the verbal architecture, executed an editorial design system, and orchestrated an exclusive creator capsule drop.
+                </p>
+</div>
+<div class="grid grid-cols-3 gap-4 py-4 border-y border-outline-variant/30">
+<div>
+<span class="font-headline text-2xl sm:text-3xl text-primary font-normal block">+142%</span>
+<span class="font-body text-xs text-on-surface-variant uppercase tracking-wider mt-1 block">Engagement</span>
+</div>
+<div>
+<span class="font-headline text-2xl sm:text-3xl text-secondary font-normal block">$3.8M</span>
+<span class="font-body text-xs text-on-surface-variant uppercase tracking-wider mt-1 block">Earned Media</span>
+</div>
+<div>
+<span class="font-headline text-2xl sm:text-3xl text-primary font-normal block">Series A</span>
+<span class="font-body text-xs text-on-surface-variant uppercase tracking-wider mt-1 block">Funding Closed</span>
+</div>
+</div>
+<div class="flex flex-wrap gap-2 text-xs font-medium text-on-surface">
+<span class="px-3 py-1 rounded-full bg-surface-container">Brand Architecture</span>
+<span class="px-3 py-1 rounded-full bg-surface-container">Global PR</span>
+<span class="px-3 py-1 rounded-full bg-surface-container">Creative Direction</span>
+</div>
+</div>
+</article>
+<!-- Case Study 02: Kroma Ventures -->
+<article class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center pb-20 border-b border-outline-variant/30">
+<!-- Editorial Breakdown Column -->
+<div class="lg:col-span-5 order-2 lg:order-1 flex flex-col justify-between space-y-6">
+<div>
+<div class="flex items-center gap-2 mb-2">
+<span class="font-body text-xs uppercase tracking-widest text-secondary font-semibold">Case Study 02</span>
+<span class="text-outline-variant">•</span>
+<span class="font-body text-xs text-on-surface-variant">Venture Ecosystem Platform</span>
+</div>
+<h3 class="font-headline text-3xl sm:text-4xl text-primary font-normal">Kroma Ventures</h3>
+<p class="font-body text-base text-on-surface-variant mt-4 leading-relaxed">
+                  A high-performing deep-tech venture fund requiring narrative cohesion to dominate competitive founder dealflow. We launched an editorial research journal, proprietary market datasets, and an exclusive LP brief.
+                </p>
+</div>
+<div class="grid grid-cols-3 gap-4 py-4 border-y border-outline-variant/30">
+<div>
+<span class="font-headline text-2xl sm:text-3xl text-primary font-normal block">45k+</span>
+<span class="font-body text-xs text-on-surface-variant uppercase tracking-wider mt-1 block">Subscribers</span>
+</div>
+<div>
+<span class="font-headline text-2xl sm:text-3xl text-secondary font-normal block">2.4x</span>
+<span class="font-body text-xs text-on-surface-variant uppercase tracking-wider mt-1 block">Tier-1 Inbounds</span>
+</div>
+<div>
+<span class="font-headline text-2xl sm:text-3xl text-primary font-normal block">#1</span>
+<span class="font-body text-xs text-on-surface-variant uppercase tracking-wider mt-1 block">Substack Tech</span>
+</div>
+</div>
+<div class="flex flex-wrap gap-2 text-xs font-medium text-on-surface">
+<span class="px-3 py-1 rounded-full bg-surface-container">Venture Narrative</span>
+<span class="px-3 py-1 rounded-full bg-surface-container">Thought Leadership</span>
+<span class="px-3 py-1 rounded-full bg-surface-container">Editorial Publications</span>
+</div>
+</div>
+<!-- Visual Imagery Column -->
+<div class="lg:col-span-7 order-1 lg:order-2 overflow-hidden rounded-3xl bg-surface-container-low shadow-lg group">
+<img alt="Kroma Ventures Publications Case Study" class="w-full aspect-[16/10] object-cover transition-transform duration-700 ease-out group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzuXrBlXm32eh0tHtFY7zttIkNmuJU2Y_FSVb-6wRsFub_1UDpQZGvwMEWvhfG3Rwy7BbdvKoxG9UQv7PNOcVcTjxzIQwj68J3DT0ahOxP35kYdRZHb0pE3AWf_rUZsV9dK9VMzEUHRCtLfX4TCNIn3vbfp5k3iCtJky2YD9qZWSsdrmK-Rfx4K7X3Ib5tW47BHa2rCMXooWuBSBqSTptw6pXM9oq8FdPwnNRaYH7H9wn3DaHb4X3_vA">
+</div>
+</article>
+<!-- Case Study 03: Vesper Health -->
+<article class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+<!-- Visual Imagery Column -->
+<div class="lg:col-span-7 overflow-hidden rounded-3xl bg-surface-container-low shadow-lg group">
+<img alt="Vesper Health Case Study" class="w-full aspect-[16/10] object-cover transition-transform duration-700 ease-out group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5kqBJkw2HTUngA-MTE9alxpbnvtJm4ElpLtVffDlSEUtVRu6VlzBCVkDiw6LVF0O1Dn1uocfoVnQp78mJaEgI164Pl-UzLSXynnOAOWxzQ-QouESeBUaT9kRrbKJ2qPat841FwTPBTt_UWZTIy9qdm0ZIvBxLU--ul-PLKQsI_ek6PCt57iXagqh6BHvLNXo07ptNile1namYutwIZySv8e6ToTdFAa3AcjKGQ1aKszWnOuGgzu51sA">
+</div>
+<!-- Editorial Breakdown Column -->
+<div class="lg:col-span-5 flex flex-col justify-between space-y-6">
+<div>
+<div class="flex items-center gap-2 mb-2">
+<span class="font-body text-xs uppercase tracking-widest text-secondary font-semibold">Case Study 03</span>
+<span class="text-outline-variant">•</span>
+<span class="font-body text-xs text-on-surface-variant">DTC Launch &amp; Lifecycle Marketing</span>
+</div>
+<h3 class="font-headline text-3xl sm:text-4xl text-primary font-normal">Vesper Health</h3>
+<p class="font-body text-base text-on-surface-variant mt-4 leading-relaxed">
+                  Translating complex cellular diagnostic science into an intuitive, trusted consumer health routine. We created a seamless 3-tier onboarding funnel paired with physician council endorsements.
+                </p>
+</div>
+<div class="grid grid-cols-3 gap-4 py-4 border-y border-outline-variant/30">
+<div>
+<span class="font-headline text-2xl sm:text-3xl text-secondary font-normal block">18,000</span>
+<span class="font-body text-xs text-on-surface-variant uppercase tracking-wider mt-1 block">Waitlist (30d)</span>
+</div>
+<div>
+<span class="font-headline text-2xl sm:text-3xl text-primary font-normal block">-34%</span>
+<span class="font-body text-xs text-on-surface-variant uppercase tracking-wider mt-1 block">CAC Reduction</span>
+</div>
+<div>
+<span class="font-headline text-2xl sm:text-3xl text-primary font-normal block">92%</span>
+<span class="font-body text-xs text-on-surface-variant uppercase tracking-wider mt-1 block">D-60 Retention</span>
+</div>
+</div>
+<div class="flex flex-wrap gap-2 text-xs font-medium text-on-surface">
+<span class="px-3 py-1 rounded-full bg-surface-container">DTC Go-To-Market</span>
+<span class="px-3 py-1 rounded-full bg-surface-container">Retention Architecture</span>
+<span class="px-3 py-1 rounded-full bg-surface-container">App Ecosystem</span>
+</div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- PROFESSIONAL EXPERIENCE & CREDENTIALS -->
+<section class="w-full bg-surface-container-low py-28 lg:py-36 border-t border-outline-variant/30" id="experience">
+<div class="max-w-[1400px] mx-auto px-6 sm:px-10 lg:px-16">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+<div class="lg:col-span-4">
+<span class="font-body text-xs uppercase tracking-[0.2em] font-semibold text-secondary block mb-3">Chronology</span>
+<h2 class="font-headline text-3xl sm:text-4xl text-primary leading-tight font-normal">
+              Experience &amp; Leadership
+            </h2>
+<p class="font-body text-sm text-on-surface-variant mt-4 leading-relaxed">
+              A trajectory moving from high-caliber creative agency strategy to executive in-house leadership, and ultimately founding Atelier Adeline.
+            </p>
+</div>
+<div class="lg:col-span-8 space-y-6">
+<div class="p-8 rounded-3xl bg-surface border border-outline-variant/30 shadow-sm hover:shadow-md transition-shadow">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+<h3 class="font-headline text-2xl text-primary font-normal">Principal Strategist &amp; Advisor</h3>
+<span class="text-xs uppercase tracking-wider text-secondary font-semibold">2022 — Present</span>
+</div>
+<p class="text-xs uppercase tracking-widest text-on-surface-variant mb-4 font-medium">Atelier Adeline • New York &amp; Global</p>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                Directing strategic communications, narrative positioning, and market entrance for high-growth tech ventures, media companies, and cultural organizations. Partnering directly with Series A to Series C leadership.
+              </p>
+</div>
+<div class="p-8 rounded-3xl bg-surface border border-outline-variant/30 shadow-sm hover:shadow-md transition-shadow">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+<h3 class="font-headline text-2xl text-primary font-normal">VP of Communications &amp; Brand</h3>
+<span class="text-xs uppercase tracking-wider text-secondary font-semibold">2020 — 2022</span>
+</div>
+<p class="text-xs uppercase tracking-widest text-on-surface-variant mb-4 font-medium">Horizon Media &amp; Ventures</p>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                Oversaw brand strategy and global external communications across 14 portfolio entities. Managed an internal multi-disciplinary team of 12 writers, designers, and growth marketers.
+              </p>
+</div>
+<div class="p-8 rounded-3xl bg-surface border border-outline-variant/30 shadow-sm hover:shadow-md transition-shadow">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+<h3 class="font-headline text-2xl text-primary font-normal">Senior Digital Marketing Strategist</h3>
+<span class="text-xs uppercase tracking-wider text-secondary font-semibold">2018 — 2020</span>
+</div>
+<p class="text-xs uppercase tracking-widest text-on-surface-variant mb-4 font-medium">Bloom Global Agency</p>
+<p class="font-body text-sm text-on-surface-variant leading-relaxed">
+                Delivered enterprise omnichannel growth blueprints and editorial campaigns for global consumer lifestyle clients including Monocle, Equinox, and Aesop.
+              </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- LEADERSHIP & IMPACT: WARM TERRACOTTA / CLAY ACCENT SURFACE -->
+<section class="w-full bg-atelier-clay text-on-surface py-28 lg:py-36 relative overflow-hidden" id="impact">
+<div class="max-w-[1400px] mx-auto px-6 sm:px-10 lg:px-16">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<span class="font-body text-xs uppercase tracking-[0.2em] font-semibold text-secondary block mb-2">Scale &amp; Precision</span>
+<h2 class="font-headline text-3xl sm:text-5xl text-primary font-normal tracking-tight">Quantifiable Milestones</h2>
+<p class="font-body text-base text-on-surface-variant mt-3 leading-relaxed">
+            Concrete economic value compounded through deliberate narrative discipline.
+          </p>
+</div>
+<!-- Metric Bento -->
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+<div class="p-8 rounded-3xl bg-surface/80 backdrop-blur-sm border border-secondary/20 shadow-sm flex flex-col justify-center items-center text-center">
+<span class="font-headline text-4xl sm:text-5xl text-primary font-normal leading-none">$28M+</span>
+<span class="font-body text-sm text-primary font-semibold mt-3">Capital Raised</span>
+<span class="font-body text-xs text-on-surface-variant mt-1">Across Advised Portfolios</span>
+</div>
+<div class="p-8 rounded-3xl bg-surface/80 backdrop-blur-sm border border-secondary/20 shadow-sm flex flex-col justify-center items-center text-center">
+<span class="font-headline text-4xl sm:text-5xl text-secondary font-normal leading-none">85+</span>
+<span class="font-body text-sm text-primary font-semibold mt-3">Brand Campaigns</span>
+<span class="font-body text-xs text-on-surface-variant mt-1">Architected Worldwide</span>
+</div>
+<div class="p-8 rounded-3xl bg-surface/80 backdrop-blur-sm border border-secondary/20 shadow-sm flex flex-col justify-center items-center text-center">
+<span class="font-headline text-4xl sm:text-5xl text-primary font-normal leading-none">14+</span>
+<span class="font-body text-sm text-primary font-semibold mt-3">Keynote Lectures</span>
+<span class="font-body text-xs text-on-surface-variant mt-1">Invited Global Summits</span>
+</div>
+<div class="p-8 rounded-3xl bg-surface/80 backdrop-blur-sm border border-secondary/20 shadow-sm flex flex-col justify-center items-center text-center">
+<span class="font-headline text-4xl sm:text-5xl text-secondary font-normal leading-none">120k+</span>
+<span class="font-body text-sm text-primary font-semibold mt-3">Active Audiences</span>
+<span class="font-body text-xs text-on-surface-variant mt-1">Nurtured Across Platforms</span>
+</div>
+</div>
+<!-- Endorsement Quote Card -->
+<div class="p-10 md:p-14 rounded-3xl bg-surface/90 border border-secondary/25 shadow-lg max-w-4xl mx-auto flex flex-col items-center text-center">
+<span class="material-symbols-outlined text-4xl text-secondary mb-4">format_quote</span>
+<p class="font-headline text-xl sm:text-2xl text-primary italic max-w-2xl leading-relaxed">
+            “Adeline has an uncanny ability to distill dense, technical venture propositions into elegant cultural narratives that resonate deeply with both retail consumers and institutional investors.”
+          </p>
+<div class="mt-6 flex flex-col items-center">
+<span class="font-body text-base text-primary font-semibold">Julian Montgomery</span>
+<span class="font-body text-xs uppercase tracking-wider text-on-surface-variant mt-0.5">Managing Partner • Horizon Media &amp; Ventures</span>
+</div>
+</div>
+</div>
+</section>
+<!-- CONTACT & ENGAGEMENT MANDATE -->
+<section class="w-full bg-surface-container py-28 lg:py-36" id="contact">
+<div class="max-w-[1400px] mx-auto px-6 sm:px-10 lg:px-16">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+<!-- Left: Direct Inquiries -->
+<div class="lg:col-span-5 flex flex-col justify-between space-y-8">
+<div>
+<div class="inline-flex items-center gap-2 mb-3">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-body text-xs uppercase tracking-[0.2em] font-semibold text-secondary">Initiate Engagement</span>
+</div>
+<h2 class="font-headline text-3xl sm:text-5xl text-primary leading-tight font-normal">
+                Let’s architect enduring momentum.
+              </h2>
+<p class="font-body text-base text-on-surface-variant mt-4 leading-relaxed">
+                Currently reviewing bespoke advisory mandates, brand strategy sprints, and speaking requests for upcoming cycles.
+              </p>
+</div>
+<div class="space-y-4">
+<div class="p-6 rounded-2xl bg-surface border border-outline-variant/30 flex items-center gap-4">
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<div>
+<span class="text-xs uppercase tracking-wider text-on-surface-variant font-medium block">Direct Channel</span>
+<a class="font-body text-base text-primary font-semibold hover:text-secondary transition-colors" href="mailto:hello@adeline-strategy.com">hello@adeline-strategy.com</a>
+</div>
+</div>
+<div class="p-6 rounded-2xl bg-surface border border-outline-variant/30 flex items-center gap-4">
+<div class="w-12 h-12 rounded-xl bg-surface-container text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined">calendar_today</span>
+</div>
+<div>
+<span class="text-xs uppercase tracking-wider text-on-surface-variant font-medium block">Consultation</span>
+<a class="font-body text-base text-primary font-semibold hover:text-secondary transition-colors underline decoration-secondary" href="#">Schedule 30-min Executive Briefing</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Right: Sleek Form -->
+<div class="lg:col-span-7 bg-surface rounded-3xl p-8 sm:p-12 border border-outline-variant/30 shadow-xl">
+<form class="space-y-6" id="contactForm" onsubmit="event.preventDefault(); document.getElementById('formSuccess').classList.remove('hidden');">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block text-xs uppercase tracking-wider text-primary font-semibold mb-2" for="name">Your Name</label>
+<input class="w-full bg-surface-container-low rounded-xl px-4 py-3.5 text-on-surface font-body text-sm border border-outline-variant/40 focus:outline-none focus:ring-2 focus:ring-secondary/40 transition-all placeholder:text-on-surface-variant/40" id="name" placeholder="Elena Rostova" required="" type="text">
+</div>
+<div>
+<label class="block text-xs uppercase tracking-wider text-primary font-semibold mb-2" for="email">Email Address</label>
+<input class="w-full bg-surface-container-low rounded-xl px-4 py-3.5 text-on-surface font-body text-sm border border-outline-variant/40 focus:outline-none focus:ring-2 focus:ring-secondary/40 transition-all placeholder:text-on-surface-variant/40" id="email" placeholder="elena@studio.com" required="" type="email">
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block text-xs uppercase tracking-wider text-primary font-semibold mb-2" for="org">Organization / Venture</label>
+<input class="w-full bg-surface-container-low rounded-xl px-4 py-3.5 text-on-surface font-body text-sm border border-outline-variant/40 focus:outline-none focus:ring-2 focus:ring-secondary/40 transition-all placeholder:text-on-surface-variant/40" id="org" placeholder="e.g. Series B HealthTech" type="text">
+</div>
+<div>
+<label class="block text-xs uppercase tracking-wider text-primary font-semibold mb-2" for="timeline">Timeline Window</label>
+<select class="w-full bg-surface-container-low rounded-xl px-4 py-3.5 text-on-surface font-body text-sm border border-outline-variant/40 focus:outline-none focus:ring-2 focus:ring-secondary/40 transition-all" id="timeline">
+<option>Immediate / Q3 Advisory</option>
+<option>Q4 Strategy Mandate</option>
+<option>Keynote or Speaking Engagement</option>
+<option>Board Advisory Invitation</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block text-xs uppercase tracking-wider text-primary font-semibold mb-2" for="message">Strategic Scope &amp; Context</label>
+<textarea class="w-full bg-surface-container-low rounded-xl px-4 py-3.5 text-on-surface font-body text-sm border border-outline-variant/40 focus:outline-none focus:ring-2 focus:ring-secondary/40 transition-all placeholder:text-on-surface-variant/40" id="message" placeholder="Please outline the current inflection point and primary objectives..." required="" rows="4"></textarea>
+</div>
+<div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-2">
+<span class="font-body text-xs text-on-surface-variant">
+                  Confidential briefs reviewed within 24–48 hours.
+                </span>
+<button class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-on-primary rounded-full text-xs font-semibold uppercase tracking-widest hover:bg-secondary transition-all duration-300 shadow-md hover:-translate-y-0.5" type="submit">
+<span class="">Send Strategic Inquiry</span>
+<span class="material-symbols-outlined text-sm">send</span>
+</button>
+</div>
+<div class="hidden p-4 rounded-xl bg-secondary-fixed text-on-secondary-fixed text-center font-body text-sm font-medium" id="formSuccess">
+                Inquiry received. Adeline will review your brief promptly.
+              </div>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- REFINED ATELIER FOOTER -->
+<footer class="w-full bg-surface-container-low border-t border-outline-variant/30 py-16">
+<div class="max-w-[1400px] mx-auto px-6 sm:px-10 lg:px-16">
+<div class="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8 pb-12 border-b border-outline-variant/30">
+<div class="flex items-center gap-3">
+<img alt="Adeline Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VJHQFPBWVpvNpIhlMNYICB0UreV5kiMgKspNPJfvxiWY5rv_6fYpkcRMH3VPewbI8k98r3ykqFLf9baZUi9IgomCvrLoZiWHfIFW4P3qQQ9vxhA71yYX7fZzu-pefwjNyJzAKuJ4zir_axQjRWrikFrMeFB-qP77ftX8XI1aVlevqj_OIMOgXZvtjeojzqB7KrISS-9xw5AFzgsTC1gM8MVqtD6MNtl3NQNfpxdbu3n-MpN1issdzJN-ac">
+<span class="text-xs uppercase tracking-widest text-on-surface-variant border-l border-outline-variant/60 pl-3">Strategy &amp; Architectural Advisory</span>
+</div>
+<div class="flex flex-wrap items-center gap-4 text-xs font-medium uppercase tracking-wider text-on-surface-variant">
+<a class="px-4 py-2 rounded-full bg-surface hover:bg-secondary hover:text-on-secondary transition-all" href="#">LinkedIn</a>
+<a class="px-4 py-2 rounded-full bg-surface hover:bg-secondary hover:text-on-secondary transition-all" href="#">Substack</a>
+<a class="px-4 py-2 rounded-full bg-surface hover:bg-secondary hover:text-on-secondary transition-all" href="#">X / Twitter</a>
+<a class="px-4 py-2 rounded-full bg-surface hover:bg-secondary hover:text-on-secondary transition-all" href="#">ReadCV</a>
+</div>
+</div>
+<div class="pt-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-xs text-on-surface-variant">
+<p class="">© 2024 Adeline. All rights reserved. New York City • Global Advisory.</p>
+<p class="tracking-wide">Architectural Positioning &amp; Executive Narrative Systems</p>
+</div>
+</div>
+</footer>
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        if (href && href.length > 1) {
+          e.preventDefault();
+          const target = document.querySelector(href);
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+      });
+    });
+  </script>
+
+
+</body></html>
