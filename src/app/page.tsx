@@ -49,7 +49,7 @@ export default function Home() {
       <main className="w-full pt-20">
         {/* HERO SECTION */}
         <section className="relative w-full max-w-[1400px] mx-auto px-6 sm:px-10 lg:px-16 py-24 lg:py-32 overflow-hidden">
-          <motion.div 
+          <motion.div
             initial="hidden"
             animate="visible"
             variants={staggerContainer}
@@ -69,25 +69,31 @@ export default function Home() {
               <motion.p variants={fadeInUp} className="font-body text-lg text-on-surface-variant max-w-xl leading-relaxed">
                 Entrepreneurial Thinker & Creative Strategist bridging refined cultural storytelling with rigorous commercial execution.
               </motion.p>
-              <motion.div variants={fadeInUp} className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+              <motion.div variants={fadeInUp} className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4 flex-wrap">
                 <a className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-on-primary rounded-full text-xs font-semibold uppercase tracking-widest hover:bg-secondary transition-all duration-300 shadow-md hover:-translate-y-0.5" href="#projects">
                   View Portfolio
                 </a>
+                <a className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-surface text-primary border border-primary/20 rounded-full text-xs font-semibold uppercase tracking-widest hover:bg-primary/5 transition-all duration-300 shadow-sm hover:-translate-y-0.5" href="/CV_Adeline_Buhendwa.pdf" target="_blank" rel="noopener noreferrer">
+                  Read CV
+                </a>
+                <a className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-secondary text-white rounded-full text-xs font-semibold uppercase tracking-widest hover:opacity-90 transition-all duration-300 shadow-sm hover:-translate-y-0.5" href="https://www.linkedin.com/in/adeline-buhendwa-218a82214" target="_blank" rel="noopener noreferrer">
+                  LinkedIn
+                </a>
               </motion.div>
             </div>
-            
+
             {/* Right: Elegant Architectural Silhouette Portrait */}
             <motion.div variants={fadeInUp} className="lg:col-span-5 relative flex justify-center lg:justify-end">
               <div className="relative w-full max-w-md">
                 <div className="absolute -top-4 -left-4 w-full h-full rounded-[2.5rem] bg-surface-container-high/80 -z-10 transform -rotate-1 border border-outline-variant/30"></div>
                 <div className="relative rounded-[2.25rem] overflow-hidden shadow-2xl bg-surface-container-low border border-outline-variant/40 aspect-[4/5] bg-surface-variant flex items-center justify-center">
-                   <Image 
-                     src="/headshot pro 2.jpeg" 
-                     alt="Adeline Profile" 
-                     fill 
-                     className="object-cover transition-transform duration-700 ease-out hover:scale-105"
-                     sizes="(max-width: 768px) 100vw, 50vw"
-                   />
+                  <Image
+                    src="/headshot pro 2.jpeg"
+                    alt="Adeline Profile"
+                    fill
+                    className="object-cover transition-transform duration-700 ease-out hover:scale-105"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
                 </div>
               </div>
             </motion.div>
@@ -97,7 +103,7 @@ export default function Home() {
         {/* ABOUT & VISION SECTION */}
         <section id="about" className="w-full bg-surface-container-low py-28 lg:py-36 border-y border-outline-variant/20">
           <div className="max-w-[1400px] mx-auto px-6 sm:px-10 lg:px-16">
-            <motion.div 
+            <motion.div
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, margin: "-100px" }}
@@ -145,11 +151,11 @@ export default function Home() {
                 <h2 className="font-headline text-3xl sm:text-5xl text-on-secondary font-normal mt-2 tracking-tight">Personal Skills</h2>
               </div>
             </div>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {/* Skill 1 */}
               <div className="p-8 md:p-10 rounded-3xl bg-white/10 backdrop-blur-sm border border-white/20 hover:border-white/40 transition-all duration-300 shadow-sm hover:shadow-md">
-                <span className="font-headline text-4xl text-secondary-fixed font-light mb-6 block">01</span>
+                <svg className="w-10 h-10 text-secondary-fixed mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" /></svg>
                 <h3 className="font-headline text-2xl text-on-secondary mb-3 font-normal">Content Creation</h3>
                 <p className="font-body text-sm text-surface-container leading-relaxed">
                   Crafting engaging and visually appealing content for different audiences.
@@ -157,7 +163,7 @@ export default function Home() {
               </div>
               {/* Skill 2 */}
               <div className="p-8 md:p-10 rounded-3xl bg-white/10 backdrop-blur-sm border border-white/20 hover:border-white/40 transition-all duration-300 shadow-sm hover:shadow-md">
-                <span className="font-headline text-4xl text-secondary-fixed font-light mb-6 block">02</span>
+                <svg className="w-10 h-10 text-secondary-fixed mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" /></svg>
                 <h3 className="font-headline text-2xl text-on-secondary mb-3 font-normal">Social Media Management</h3>
                 <p className="font-body text-sm text-surface-container leading-relaxed">
                   Handling social media pages, creating strategies, and boosting engagement.
@@ -165,7 +171,7 @@ export default function Home() {
               </div>
               {/* Skill 3 */}
               <div className="p-8 md:p-10 rounded-3xl bg-white/10 backdrop-blur-sm border border-white/20 hover:border-white/40 transition-all duration-300 shadow-sm hover:shadow-md">
-                <span className="font-headline text-4xl text-secondary-fixed font-light mb-6 block">03</span>
+                <svg className="w-10 h-10 text-secondary-fixed mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
                 <h3 className="font-headline text-2xl text-on-secondary mb-3 font-normal">Graphic Design & Photography</h3>
                 <p className="font-body text-sm text-surface-container leading-relaxed">
                   Combining visual art and photography to create compelling brand assets.
@@ -173,7 +179,7 @@ export default function Home() {
               </div>
               {/* Skill 4 */}
               <div className="p-8 md:p-10 rounded-3xl bg-white/10 backdrop-blur-sm border border-white/20 hover:border-white/40 transition-all duration-300 shadow-sm hover:shadow-md">
-                <span className="font-headline text-4xl text-secondary-fixed font-light mb-6 block">04</span>
+                <svg className="w-10 h-10 text-secondary-fixed mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" /></svg>
                 <h3 className="font-headline text-2xl text-on-secondary mb-3 font-normal">Communication & Collaboration</h3>
                 <p className="font-body text-sm text-surface-container leading-relaxed">
                   Working effectively with teams and engaging with online communities.
@@ -181,7 +187,7 @@ export default function Home() {
               </div>
               {/* Skill 5 */}
               <div className="p-8 md:p-10 rounded-3xl bg-white/10 backdrop-blur-sm border border-white/20 hover:border-white/40 transition-all duration-300 shadow-sm hover:shadow-md lg:col-span-2">
-                <span className="font-headline text-4xl text-secondary-fixed font-light mb-6 block">05</span>
+                <svg className="w-10 h-10 text-secondary-fixed mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
                 <h3 className="font-headline text-2xl text-on-secondary mb-3 font-normal">Adaptability & Willingness to Learn</h3>
                 <p className="font-body text-sm text-surface-container leading-relaxed">
                   Quickly learning new tools and trends to stay ahead in the digital space. Always eager to improve and take on new challenges.
@@ -201,26 +207,39 @@ export default function Home() {
                   Work Experience
                 </h2>
               </div>
-              <div className="lg:col-span-8 space-y-6">
-                <div className="p-8 rounded-3xl bg-surface border border-outline-variant/30 shadow-sm hover:shadow-md transition-shadow">
-                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
-                    <h3 className="font-headline text-2xl text-primary font-normal">Social Media Manager</h3>
-                  </div>
-                  <p className="text-xs uppercase tracking-widest text-on-surface-variant mb-4 font-medium">KijanaRise</p>
-                </div>
-                
-                <div className="p-8 rounded-3xl bg-surface border border-outline-variant/30 shadow-sm hover:shadow-md transition-shadow">
-                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
-                    <h3 className="font-headline text-2xl text-primary font-normal">Social Media Manager</h3>
-                  </div>
-                  <p className="text-xs uppercase tracking-widest text-on-surface-variant mb-4 font-medium">CurriSex</p>
-                </div>
+              <div className="lg:col-span-8">
+                <div className="border-l-2 border-outline-variant/30 ml-4 sm:ml-6 space-y-8 py-2">
 
-                <div className="p-8 rounded-3xl bg-surface border border-outline-variant/30 shadow-sm hover:shadow-md transition-shadow">
-                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
-                    <h3 className="font-headline text-2xl text-primary font-normal">Social Media Intern</h3>
+                  <div className="relative pl-8 sm:pl-12">
+                    <div className="absolute -left-[9px] top-10 w-4 h-4 rounded-full bg-secondary ring-4 ring-surface-container-low"></div>
+                    <div className="p-8 rounded-3xl bg-surface border border-outline-variant/30 shadow-sm hover:shadow-md transition-shadow">
+                      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+                        <h3 className="font-headline text-2xl text-primary font-normal">Social Media Manager</h3>
+                      </div>
+                      <p className="text-xs uppercase tracking-widest text-on-surface-variant mb-4 font-medium">KijanaRise</p>
+                    </div>
                   </div>
-                  <p className="text-xs uppercase tracking-widest text-on-surface-variant mb-4 font-medium">HelpService</p>
+
+                  <div className="relative pl-8 sm:pl-12">
+                    <div className="absolute -left-[9px] top-10 w-4 h-4 rounded-full bg-secondary ring-4 ring-surface-container-low"></div>
+                    <div className="p-8 rounded-3xl bg-surface border border-outline-variant/30 shadow-sm hover:shadow-md transition-shadow">
+                      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+                        <h3 className="font-headline text-2xl text-primary font-normal">Social Media Manager</h3>
+                      </div>
+                      <p className="text-xs uppercase tracking-widest text-on-surface-variant mb-4 font-medium">CurriSex</p>
+                    </div>
+                  </div>
+
+                  <div className="relative pl-8 sm:pl-12">
+                    <div className="absolute -left-[9px] top-10 w-4 h-4 rounded-full bg-secondary ring-4 ring-surface-container-low"></div>
+                    <div className="p-8 rounded-3xl bg-surface border border-outline-variant/30 shadow-sm hover:shadow-md transition-shadow">
+                      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+                        <h3 className="font-headline text-2xl text-primary font-normal">Social Media Intern</h3>
+                      </div>
+                      <p className="text-xs uppercase tracking-widest text-on-surface-variant mb-4 font-medium">HelpService</p>
+                    </div>
+                  </div>
+
                 </div>
               </div>
             </div>
@@ -236,18 +255,18 @@ export default function Home() {
                 <h2 className="font-headline text-3xl sm:text-5xl text-primary font-normal mt-2 tracking-tight">Project Portfolio</h2>
               </div>
             </div>
-            
+
             <div className="space-y-24">
               {/* Project 1 */}
               <article className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center pb-20 border-b border-outline-variant/30">
                 <div className="lg:col-span-7 relative overflow-hidden rounded-3xl bg-surface-container-low shadow-lg group aspect-[16/10] bg-surface-variant flex items-center justify-center">
-                   <Image 
-                     src="/WhatsApp Image 2025-03-12 at 12.13.55 PM.jpg" 
-                     alt="Fashion Show Event" 
-                     fill 
-                     className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-                     sizes="(max-width: 1024px) 100vw, 60vw"
-                   />
+                  <Image
+                    src="/WhatsApp Image 2025-03-12 at 12.13.55 PM.jpg"
+                    alt="Fashion Show Event"
+                    fill
+                    className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                    sizes="(max-width: 1024px) 100vw, 60vw"
+                  />
                 </div>
                 <div className="lg:col-span-5 flex flex-col justify-between space-y-6">
                   <div>
@@ -265,7 +284,7 @@ export default function Home() {
                   </div>
                 </div>
               </article>
-              
+
               {/* Project 2 */}
               <article className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center pb-20 border-b border-outline-variant/30">
                 <div className="lg:col-span-5 order-2 lg:order-1 flex flex-col justify-between space-y-6">
@@ -280,13 +299,13 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="lg:col-span-7 order-1 lg:order-2 relative overflow-hidden rounded-3xl bg-surface-container-low shadow-lg group aspect-[16/10] bg-surface-variant flex items-center justify-center">
-                   <Image 
-                     src="/helpserv.jpg" 
-                     alt="HelpService Case Study" 
-                     fill 
-                     className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
-                     sizes="(max-width: 1024px) 100vw, 60vw"
-                   />
+                  <Image
+                    src="/helpserv.jpg"
+                    alt="HelpService Case Study"
+                    fill
+                    className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                    sizes="(max-width: 1024px) 100vw, 60vw"
+                  />
                 </div>
               </article>
             </div>
@@ -318,6 +337,12 @@ export default function Home() {
                     <div>
                       <span className="text-xs uppercase tracking-wider text-on-surface-variant font-medium block">Phone / WhatsApp</span>
                       <a className="font-body text-base text-primary font-semibold hover:text-secondary transition-colors" href="tel:+254768950936">+254 768 950 936</a>
+                    </div>
+                  </div>
+                  <div className="p-6 rounded-2xl bg-surface border border-outline-variant/30 flex items-center gap-4">
+                    <div>
+                      <span className="text-xs uppercase tracking-wider text-on-surface-variant font-medium block">LinkedIn</span>
+                      <a className="font-body text-base text-primary font-semibold hover:text-secondary transition-colors" href="https://www.linkedin.com/in/adeline-buhendwa-218a82214" target="_blank" rel="noopener noreferrer">Adeline Buhendwa</a>
                     </div>
                   </div>
                 </div>
