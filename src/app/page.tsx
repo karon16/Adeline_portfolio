@@ -1,15 +1,15 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import Image from "next/image";
 
 export default function Home() {
-  const fadeInUp = {
+  const fadeInUp: Variants = {
     hidden: { opacity: 0, y: 30 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
   };
 
-  const staggerContainer = {
+  const staggerContainer: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -81,8 +81,13 @@ export default function Home() {
               <div className="relative w-full max-w-md">
                 <div className="absolute -top-4 -left-4 w-full h-full rounded-[2.5rem] bg-surface-container-high/80 -z-10 transform -rotate-1 border border-outline-variant/30"></div>
                 <div className="relative rounded-[2.25rem] overflow-hidden shadow-2xl bg-surface-container-low border border-outline-variant/40 aspect-[4/5] bg-surface-variant flex items-center justify-center">
-                   {/* Placeholder for Profile Picture */}
-                   <span className="font-headline text-2xl text-on-surface-variant/50">Profile Picture</span>
+                   <Image 
+                     src="/headshot pro 2.jpeg" 
+                     alt="Adeline Profile" 
+                     fill 
+                     className="object-cover transition-transform duration-700 ease-out hover:scale-105"
+                     sizes="(max-width: 768px) 100vw, 50vw"
+                   />
                 </div>
               </div>
             </motion.div>
@@ -235,8 +240,14 @@ export default function Home() {
             <div className="space-y-24">
               {/* Project 1 */}
               <article className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center pb-20 border-b border-outline-variant/30">
-                <div className="lg:col-span-7 overflow-hidden rounded-3xl bg-surface-container-low shadow-lg group aspect-[16/10] bg-surface-variant flex items-center justify-center">
-                   <span className="font-headline text-2xl text-on-surface-variant/50">Fashion Show Photos</span>
+                <div className="lg:col-span-7 relative overflow-hidden rounded-3xl bg-surface-container-low shadow-lg group aspect-[16/10] bg-surface-variant flex items-center justify-center">
+                   <Image 
+                     src="/WhatsApp Image 2025-03-12 at 12.13.55 PM.jpg" 
+                     alt="Fashion Show Event" 
+                     fill 
+                     className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                     sizes="(max-width: 1024px) 100vw, 60vw"
+                   />
                 </div>
                 <div className="lg:col-span-5 flex flex-col justify-between space-y-6">
                   <div>
@@ -268,8 +279,14 @@ export default function Home() {
                     </p>
                   </div>
                 </div>
-                <div className="lg:col-span-7 order-1 lg:order-2 overflow-hidden rounded-3xl bg-surface-container-low shadow-lg group aspect-[16/10] bg-surface-variant flex items-center justify-center">
-                   <span className="font-headline text-2xl text-on-surface-variant/50">HelpService Visuals</span>
+                <div className="lg:col-span-7 order-1 lg:order-2 relative overflow-hidden rounded-3xl bg-surface-container-low shadow-lg group aspect-[16/10] bg-surface-variant flex items-center justify-center">
+                   <Image 
+                     src="/helpserv.jpg" 
+                     alt="HelpService Case Study" 
+                     fill 
+                     className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                     sizes="(max-width: 1024px) 100vw, 60vw"
+                   />
                 </div>
               </article>
             </div>
